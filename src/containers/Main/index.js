@@ -12,7 +12,7 @@ class MainScreen extends Component {
         
     }
     render() {
-        return (<div>Screen [Route Main]</div>)
+        return (<div> Hello Screen [Route Main]</div>)
     }
 }
 
@@ -22,8 +22,6 @@ const mapStateToProps = (state) => {
     }
 }
 
-const App = connect(
-    mapStateToProps
-)(MainScreen)
+const App = connect(mapStateToProps)(MainScreen)
 
 export default App

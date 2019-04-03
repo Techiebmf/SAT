@@ -1,0 +1,52 @@
+.episodes .episode {
+    opacity: 1;
+}
+.episodes{
+    .episode {
+        h2 {
+            box-sizing: content-box;
+            font-size: 15px;
+            line-height: 24px;
+            margin-top: 63.125px;
+            margin-bottom: -7.125px;
+            padding-bottom: 0;
+            font-weight: 400;
+            letter-spacing: .5px;
+            display: inline-block;
+            width: 30%;
+            text-align: right;
+            transition: transform .3s ease-in-out;
+            transform-origin: center right;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .waveform-cont {
+            display: inline-block;
+            vertical-align: middle;
+            width: 70%;
+            opacity: .4;
+        }
+        .waveform {
+            height: 60px;
+        }
+        .waveform {
+            margin-right: calc(12.06667%);
+            display: flex;
+            height: 60px;
+            justify-content: space-between;
+        }
+        .wave {
+            background: #969696;
+            width: 6px;
+            border-radius: 50px;
+            align-self: flex-end;
+            opacity: 1;
+            transition: opacity .5s ease;
+        }
+        .wave {
+            width: 4.5px;
+            align-self: center;
+        }
+    }
+}

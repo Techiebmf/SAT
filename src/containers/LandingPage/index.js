@@ -1,8 +1,8 @@
 import { connect } from 'react-redux'
 import React, {Component} from 'react'
-import TestComponent from '../../components/TestComponent';
-import {Basic} from '../../constants/action';
-import {textChange} from './action'
+import HeaderComponent from '../../components/HeaderComponent/index.js';
+import {textChange} from './action';
+import HomeSlider from '../../components/HomeSlider';
 
 
 class Home extends Component {
@@ -21,10 +21,11 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <TestComponent label={this.props.buttonText} 
-                              onClick={() => this.onButtonClick()}
-                              />
-                            </div>
+               <div className="page-container">
+                    <HeaderComponent/>
+               </div>
+                <HomeSlider/>
+            </div>
                )
     }
 }

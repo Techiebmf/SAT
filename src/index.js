@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import  store  from './store'
 import RouteComp from './routes/router'
 import { HashRouter as Router} from 'react-router-dom';
+import './styles/main.scss'
 
 ReactDOM.render(
   <Provider store={store}>
