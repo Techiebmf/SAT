@@ -1,40 +1,25 @@
-import { connect } from 'react-redux'
-import React, {Component} from 'react'
+import { connect } from 'react-redux';
+import React, {Component} from 'react';
 import {textChange} from './action';
+import ImgIcon from '../../components/ImageIcon';
 import HeaderComponent from '../../components/HeaderComponent/index.js';
 import Tile from '../../components/Tile';
-import Sidebar from '../../components/Sidebar';
-import './style.scss'
+import SidebarAbout from '../../components/SidebarAbout';
+import Detailpage from '../../components/Detailpage';
+import './style.scss';
 
 class About extends Component {    
     constructor(props,context){
         super(props,context);
-    }
+    }  
 
-    componentWillMount() {
-        //Initial call will go here
-    }
-    
-    onButtonClick = () =>{
-        this.props.dispatch(textChange())
-    }
-
-    render() {        
+    render() {   
+        const topBg = {
+            backgroundImage: 'linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url( https://australianhiker.com.au/wp-content/uploads/2016/09/pexels-photo-4-1400x933.jpg)',   
+        };     
         return (
-            <div className="advice-wrap main-left-right-col">
-                 <div className="page-container">
-                    <HeaderComponent/>
-                    <div className="left-col-70">
-                        <div className="tile-conatiner">
-                            <Tile/>                   
-                        </div>
-                    </div>
-                    <div className="right-col-30">   
-                        <Sidebar/>                     
-                    </div>
-                </div>
-            </div>
-               )
+            <Detailpage/>
+        )    
     }
 }
 

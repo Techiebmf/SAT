@@ -7,7 +7,7 @@ export default class Tile extends Component {
 
     render() {
         const tileStyle = {
-            background: 'linear-gradient(180deg, rgba(0,0,0,0.00),rgba(0,0,0,0.14)),url(https://australianhiker.com.au/wp-content/uploads/2016/09/DSC00631-264x298.jpg)',   
+            backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0.00),rgba(0,0,0,0.14)),url(https://australianhiker.com.au/wp-content/uploads/2016/09/DSC00631-264x298.jpg)',   
         };
         return (
             <div className="tile">

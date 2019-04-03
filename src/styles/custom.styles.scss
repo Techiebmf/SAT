@@ -261,13 +261,16 @@ body input[type="button"]:focus {
 }
 
 .page-container{
-  max-width: 1200px;
+  max-width: 1120px;
   width:100%;
   margin:0 auto;
 }
 
 .cs-header-wrap{
   position: relative;
+  @media (max-width: 991px){
+    position: static;
+  }
 }
 
 .row {

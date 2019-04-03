@@ -15,10 +15,18 @@
     .right-col-30{
         width: 250px;
         float: right;
+        @media (max-width: 767px){
+            position: absolute;
+            right: -228px;
+            display: none;
+        }
     }
     .left-col-70{
         width: calc(100% - 250px);
         float: left;
+        @media (max-width: 767px){
+            width: 100%;
+        }
     }
 }
  .tile {
@@ -31,12 +39,21 @@
     transform: perspective(1px) translateZ(0);
     transition-duration: 0.3s;
     transition-property: transform opacity;
+    @media (max-width: 991px){
+        width: 50%;
+    }
+    @media (max-width: 767px){
+        width: 100%;
+    }
     &:hover{
-        -webkit-transform: scale(1.008);
-        transform: scale(1.1);
-        opacity: 0.85;
-        transition-duration: 0.3s;
-        transition-property: transform opacity;
+        @media (min-width: 768px){
+            -webkit-transform: scale(1.008);
+            transform: scale(1.1);
+            opacity: 0.85;
+            transition-duration: 0.3s;
+            transition-property: transform opacity;
+        }
+        
     }
     .spacer {
         background-size: contain;
@@ -85,6 +102,8 @@
     width: 100%;
     color: $secondry-color;
     list-style: none;
+    padding-left: 25px;
+    padding-right: 25px;
     input[type=search] {
         appearance: none;
         -webkit-appearance: none;
@@ -99,6 +118,9 @@
         padding-bottom: 0;
         background: 0 0;
         outline: none;
+        @media (max-width: 991px){
+            font-size: 15px;
+        }
     }
     &>li {
         box-sizing: content-box;
@@ -107,6 +129,9 @@
         margin-top: 12.35px;
         padding-bottom: 9.65px;
         margin-bottom: 0;
+        @media (max-width: 991px){
+            font-size: 15px;
+        }
     }
     li.selected a {
         opacity: 1;
@@ -127,12 +152,18 @@
         margin-top: 6.35px;
         margin-bottom: -6.35px;
         padding-bottom: 0;
+        @media (max-width: 991px){
+            font-size: 15px;
+        }
     }
     li a {
         text-decoration: none;
         color: $secondry-color;
         opacity: .5;
         letter-spacing: .9px;
+        &:hover{
+            opacity: 1;
+        }
     }
     .sidebar-list+.sidebar-list {
         float: right;
@@ -199,5 +230,9 @@
 }
 .tile-conatiner{
     padding: 20px;
-    margin-top: 149px;
+    margin-top: 170px;
+    @media (max-width: 991px){
+        max-width: 95%;
+    }
+    
 }

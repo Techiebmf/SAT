@@ -14,7 +14,7 @@ export default class Sidebar extends Component {
                             <br/>
                             <br/>
                         </form>
-                        <li className="selected"><a href="https://australianhiker.com.au/trails/">All</a></li>
+                        <li className="selected"><a href="/trails/">All</a></li>
                         <ul className="sidebar-list">
                         <li><a href="?region=act">ACT</a></li>
                         <li><a href="?region=nsw">NSW</a></li>
@@ -26,7 +26,7 @@ export default class Sidebar extends Component {
                         <li><a href="?region=wa">WA</a></li>
                         </ul>
                        
-                        <form action="" method="get">
+                        {/* <form action="" method="get">
                         <div className="slider">
                         <div className="range inactive" data-widget="slider">
                         <span className="label bottom">0km</span>
@@ -51,7 +51,7 @@ export default class Sidebar extends Component {
                         <span className="label data">Duration</span>
                         </div>
                         </div>
-                        </form>
+                        </form> */}
                         </div>
             </div>
          )

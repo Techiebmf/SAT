@@ -11,7 +11,7 @@ export default class LogoComp extends Component {
     render() {
         return (
             <div className="cs-logo-wrap">
-                <ImgIcon className="img-responsive" src={logoImg} />
+               <a href="/"> <ImgIcon className="img-responsive" src={logoImg} /></a>
             </div>
          )
     }
